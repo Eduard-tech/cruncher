@@ -6,9 +6,14 @@ class ReadingsController < ApplicationController
     @readings = Reading.all.reverse_order
   end
 
-  # def stats
-  #   @readings = Reading.all
-  # end
+  def stats
+    @readings = Reading.all
+
+    @number_of_readings = @readings.count
+    @minimum = Reading.order('value asc').first
+    @maximum = Reading.order('value desc').first
+    @average = @readings.average(:value)
+  end
 
   # GET /readings/1 or /readings/1.json
   def show

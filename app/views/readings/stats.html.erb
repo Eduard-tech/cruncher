@@ -1,1 +1,27 @@
-<p>Hello<p>
+<table>
+  <thead>
+    <tr>
+      <th>Number of readings</th>
+      
+      <th>Minimum</th>
+      <th>Maximum</th>
+      <th>Average</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  
+      <tr>
+        <td><%= @number_of_readings %></td>
+        <td><%= @minimum.value %></td>
+        <td><%= @maximum.value %></td>
+        <td><%= @average %></td>
+
+        
+      </tr>
+
+  </tbody>
+</table>
+
+<%= link_to 'Back', readings_path %>
