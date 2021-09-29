@@ -1,25 +1,4 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# cruncher
+Rails Project - Number Cruncher
+The goal of this project is to create a website which allows users to record a series of
+numbers, as if they were taking readings from a thermometer. The site should allow users
+to list the readings they’ve recorded and also view some basic stats.
