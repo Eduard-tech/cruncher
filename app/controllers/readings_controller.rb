@@ -3,7 +3,12 @@ class ReadingsController < ApplicationController
 
   # GET /readings or /readings.json
   def index
-    @readings = Reading.all.reverse_order
+    # raise
+    if params[:sort] === nil
+     @readings = Reading.all.reverse_order
+    else
+      @readings = Reading.order(params[:sort] + " " + params[:direction])
+    end
   end
 
   def stats

@@ -1,12 +1,16 @@
+
+
+
 <p id="notice"><%= notice %></p>
 
 <h1>Readings</h1>
 
-<table>
+<table id="example" role='datatable'>
   <thead>
     <tr>
-      <th>Time</th>
-      <th>Value</th>
+    <th> <%= sortable "created_at", "Time" %> </th>
+    <th> <%=  sortable "value" %> </th>
+ 
       <th colspan="3"></th>
     </tr>
   </thead>
